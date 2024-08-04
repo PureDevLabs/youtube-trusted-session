@@ -5,7 +5,7 @@
 Open Terminal
 
 ```bash
-sudo curl -fsSL https://bun.sh/install | bash
+curl -fsSL https://bun.sh/install | bash
 ```
 
 make bun Global executable
