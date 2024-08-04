@@ -1,0 +1,21 @@
+{
+  "name": "youtube-trusted-session",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun index.js",
+    "start": "bun index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "puppeteer": "^22.15.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
