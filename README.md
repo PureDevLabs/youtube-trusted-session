@@ -29,6 +29,9 @@ sudo apt install chromium-browser
 
 ---
 
+Download the Release zip file, upload it to your Server into `/home` directory and extract it.
+
+
 To install dependencies:
 
 ```bash
