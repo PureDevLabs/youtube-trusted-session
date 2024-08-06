@@ -9,6 +9,8 @@ const delay = async (time) => {
 
 puppeteer.use(StealthPlugin());
 
+const userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36';
+
 const options = {
   headless: true,
   devtools: true,
@@ -18,11 +20,13 @@ const options = {
 
 const browser = await puppeteer.launch(options);
 await browser.pages();
-// console.log(await browser.version());
+
 const page = await browser.newPage();
 page.setDefaultNavigationTimeout(0);
 
-const url = "https://www.youtube.com/embed/JHjVmEikWLw";
+await page.setUserAgent(userAgent);
+
+const url = "https://www.youtube.com/embed/oxujPT-1i48";
 page.bringToFront();
 
 const client = await page.createCDPSession();
