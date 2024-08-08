@@ -23,9 +23,18 @@ sudo chmod a+x /usr/local/bin/bun
 
 
 ### Install Chromium Browser
+
+#### Debian 12
 ```bash
 sudo apt install chromium
 ```
+
+#### Ubuntu 22.04
+```bash
+sudo apt install chromium-browser
+```
+
+On Ubuntu open index.js and change in Line 17 `executablePath: "/usr/bin/chromium",` to `executablePath: "/usr/bin/chromium-browser",`
 
 ---
 
