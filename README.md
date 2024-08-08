@@ -1,6 +1,6 @@
 # YouTube trusted session Generator
 
-### Install bun on your Linux Server
+### Install bun on your Debian 12 Linux Server
 
 Open Terminal
 
@@ -24,7 +24,7 @@ sudo chmod a+x /usr/local/bin/bun
 
 ### Install Chromium Browser
 ```bash
-sudo apt install chromium-browser
+sudo apt install chromium
 ```
 
 ---
