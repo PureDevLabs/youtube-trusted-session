@@ -14,7 +14,7 @@ const userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 
 const options = {
   headless: true,
   devtools: true,
-  executablePath: "/usr/bin/chromium-browser",
+  executablePath: "/usr/bin/chromium",
   args: ["--no-sandbox", "--disable-setuid-sandbox"],
 };
 
