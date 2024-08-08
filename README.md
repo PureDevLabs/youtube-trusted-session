@@ -1,6 +1,6 @@
 # YouTube trusted session Generator
 
-### Install bun on your Debian 12 Linux Server
+### Install bun on your Debian 12 / Ubuntu 22.04 Linux Server
 
 Open Terminal
 
