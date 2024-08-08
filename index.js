@@ -7,6 +7,15 @@ const delay = async (time) => {
   });
 };
 
+const vid = ["JHjVmEikWLw", "DyAOO_zoAUY", "O8zmxg17YAI", "VU71fiqhFqM"];
+
+const getRandomVideoId = () => {
+  const randomIndex = Math.floor(Math.random() * vid.length);
+  return vid[randomIndex];
+};
+
+const randomVideoId = getRandomVideoId();
+
 puppeteer.use(StealthPlugin());
 
 const userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36';
@@ -26,7 +35,7 @@ page.setDefaultNavigationTimeout(0);
 
 await page.setUserAgent(userAgent);
 
-const url = "https://www.youtube.com/embed/oxujPT-1i48";
+const url = `https://www.youtube.com/embed/${randomVideoId}`;
 page.bringToFront();
 
 const client = await page.createCDPSession();
