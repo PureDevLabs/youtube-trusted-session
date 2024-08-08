@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "add": "^2.0.6",
-    "puppeteer": "^22.15.0",
+    "puppeteer-core": "^23.0.1",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
