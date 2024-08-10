@@ -49,7 +49,7 @@ client.on("Network.requestWillBeSent", (params) => {
       poToken: data.serviceIntegrityDimensions.poToken,
       basejs: "https://www.youtube.com" + basejsSrc
     };
-    console.log(outout);
+    console.log(JSON.stringify(outout));
   }
 });
 
