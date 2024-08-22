@@ -34,7 +34,7 @@ sudo apt install chromium
 sudo apt install chromium-browser
 ```
 
-On Ubuntu open index.js and change in Line 17 `executablePath: "/usr/bin/chromium",` to `executablePath: "/usr/bin/chromium-browser",`
+On Ubuntu open index.js and change in Line 26 `executablePath: "/usr/bin/chromium",` to `executablePath: "/usr/bin/chromium-browser",`
 
 ---
 
