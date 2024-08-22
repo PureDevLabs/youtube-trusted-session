@@ -7,7 +7,7 @@ const delay = async (time) => {
   });
 };
 
-const vid = ["JHjVmEikWLw", "DyAOO_zoAUY", "O8zmxg17YAI", "VU71fiqhFqM"];
+const vid = ["H4qoeRVoT8U"];  //["JHjVmEikWLw", "DyAOO_zoAUY", "O8zmxg17YAI", "VU71fiqhFqM"];
 
 const getRandomVideoId = () => {
   const randomIndex = Math.floor(Math.random() * vid.length);
@@ -47,8 +47,9 @@ client.on("Network.requestWillBeSent", (params) => {
     const outout = {
       visitorData: data.context.client.visitorData,
       poToken: data.serviceIntegrityDimensions.poToken,
+      basejs: "https://www.youtube.com" + basejsSrc
     };
-    console.log(outout);
+    console.log(JSON.stringify(outout));
   }
 });
 
@@ -56,6 +57,9 @@ await page.goto(url, { waitUntil: "domcontentloaded" });
 
 await delay(3000);
 await page.evaluate((_) => window.stop());
+
+const basejsScript = await page.$("script[name='player/base']")
+const basejsSrc = await page.evaluate(element => element.getAttribute('src'), basejsScript);
 
 const playButton = await page.$("#movie_player");
 await playButton.click();
