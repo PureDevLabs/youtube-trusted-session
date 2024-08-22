@@ -1,4 +1,7 @@
-# YouTube trusted session Generator
+# YouTube Trusted Session Generator
+
+> [!IMPORTANT]  
+> ***This code MUST be installed on the SAME server that hosts the [Tube Video Backend](https://github.com/PureDevLabs/TubeVideoBackend) software!***
 
 ### Install bun on your Debian 12 / Ubuntu 22.04 Linux Server
 
@@ -19,7 +22,7 @@ sudo chmod a+x /usr/local/bin/bun
 ```
 
 > [!IMPORTANT]  
-> ***close the Terminal after bun installation***
+> ***Close the Terminal after bun installation***
 
 
 ### Install Chromium Browser
@@ -34,11 +37,11 @@ sudo apt install chromium
 sudo apt install chromium-browser
 ```
 
-On Ubuntu open index.js and change in Line 26 `executablePath: "/usr/bin/chromium",` to `executablePath: "/usr/bin/chromium-browser",`
+On Ubuntu, open index.js and change in Line 26 `executablePath: "/usr/bin/chromium",` to `executablePath: "/usr/bin/chromium-browser",`
 
 ---
 
-Download the Release zip file, upload it to your Server into `/home` directory and extract it.
+Download the Release zip file, upload it to the `/home` directory on your server, and extract it.
 
 
 To install dependencies:
