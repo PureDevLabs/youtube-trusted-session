@@ -22,7 +22,7 @@ const userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 
 
 const options = {
   headless: 'shell',
-  devtools: true,
+  devtools: false,
   executablePath: "/usr/bin/chromium",
   args: ["--no-sandbox", "--disable-setuid-sandbox"],
 };
