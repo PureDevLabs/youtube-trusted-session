@@ -42,7 +42,7 @@ On Ubuntu, open index.js and change in Line 26 `executablePath: "/usr/bin/chromi
 ---
 
 Download the Release zip file, upload it to the `/home` directory on your server, and extract it.
-
+make sure this folder is called `youtube-trusted-session`
 
 To install dependencies:
 
@@ -50,7 +50,7 @@ To install dependencies:
 bun install
 ```
 
-To run:
+To test:
 
 ```bash
 bun run start
