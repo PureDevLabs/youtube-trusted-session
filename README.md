@@ -1,7 +1,7 @@
 # YouTube Trusted Session Generator
 
 > [!IMPORTANT]  
-> ***This code MUST be installed on the SAME server that hosts the [Tube Video Backend](https://github.com/PureDevLabs/TubeVideoBackend) software!***
+> ***This code MUST be installed on the SAME server that hosts the [Tube Video Backend](https://github.com/PureDevLabs/TubeVideoBackend) or [Tube Media Converter](https://github.com/PureDevLabs/TubeMediaConverter) software!***
 
 ### Install bun on your Debian 12 / Ubuntu 22.04 Linux Server
 
